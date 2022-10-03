@@ -1,0 +1,11 @@
+// Traffic Light Class/Object Diagram
+// ----------------------------------
+
+
+[<<TrafficLight>>;trafficLight{bg:lightskyblue}]<>-greenLedBlinker>[<<LedBlinker>>;greenLedBlinker{bg:limegreen}]<>-led>[<<Led>>;greenLed{bg:green}]
+
+[<<TrafficLight>>;trafficLight]<>-redLed>[<<Led>>;redLed{bg:red}]
+[<<TrafficLight>>;trafficLight]<>-yellowLed>[<<Led>>;yellowLed{bg:yellow}]
+[<<TrafficLight>>;trafficLight]<>-greenLed>[<<Led>>;greenLed]
+[<<TrafficLight>>;trafficLight]<>-pot>[<<Potentiometer>>;pot{bg:gray}]
+[<<TrafficLight>>;trafficLight]<>-button>[<<PushButton>>;button{bg:brown}]
